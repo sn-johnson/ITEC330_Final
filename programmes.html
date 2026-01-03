@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COSTAATT – Start Your Future | Programmes </title>
+  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/96e67bb0d3.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+  <div class="container">
+    
+    <a class="navbar-brand" href="#"><img src="images/LOGO-color-new.svg"alt="COSTAATT logo" class="logo-header"></a>
+
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNav"
+      aria-controls="mainNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="programmes.html">Programmes</a></li>
+        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Students</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      </ul>
+      <a href="#" class="btn btn-primary ms-lg-3">Apply Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<main id="main-content" tabindex="-1">
+    <!-- Programmes Hero Section -->
+<section class="programmes-hero d-flex align-items-center">
+  <div class="container">
+    <div class="hero-text">
+      <h1 class="hero-title">Explore our Academic Programmes</h1>
+      <h3 class="hero-subtitle">Your Pathway to Success Starts Here</h3>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding" style="background-color: #e0d9f3;">
+  <div class="container">
+    <div class="row g-3 align-items-center">
+
+      <!-- Programme Type Filter -->
+      <div class="col-md-3">
+        <label for="filterType" class="form-label">Programme Type</label>
+        <select id="filterType" class="form-select">
+            <option value="">All Types</option>
+            <option value="Certificate">Certificate</option>
+            <option value="Associates">Associates</option>
+            <option value="Bachelors">Bachelors</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Postgraduate">Postgraduate Diploma</option>
+        </select>
+
+      </div>
+
+      <!-- Area of Study Filter -->
+      <div class="col-md-4">
+        <label for="filterFaculty" class="form-label">Area of Study</label>
+        <select id="filterFaculty" class="form-select">
+          <option value="">All Schools</option>
+          <option value="School of Business and Digital Technologies">School of Business and Digital Technologies</option>
+          <option value="Ken Gordon School of Communication, Creative, and Digital Media">Ken Gordon School of Communication, Creative, and Digital Media</option>
+          <option value="School of Liberal Arts, Education and Digital Humanities">School of Liberal Arts, Education and Digital Humanities</option>
+          <option value="School of Nursing, Health, and Medical Technologies">School of Nursing, Health, and Medical Technologies</option>
+          <option value="School of Workforce Enhancement and Development">School of Workforce Enhancement and Development</option>
+          <option value="School of Environment Circular Economy and Sustainability">School of Environment Circular Economy and Sustainability</option>
+        </select>
+      </div>
+
+      <!-- Sort A-Z -->
+      <div class="col-md-3">
+        <label for="sortAlpha" class="form-label">Sort</label>
+        <select id="sortAlpha" class="form-select">
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
+      </div>
+
+      <!-- Filter Button -->
+      <div class="col-md-2 d-flex align-items-end">
+        <button id="btnFilter" class="btn btn-primary w-100">Filter</button>
+      </div>
+
+      <!-- Dynamic info -->
+      <div class="col-md-2">
+        <p id="filterInfo" class="mb-0" style="margin-top: 2rem; font-weight: 600;">Showing all programmes</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<hr style="border-color: #e0d9f3;">
+
+<section class="section-padding">
+  <div class="container">
+    <div class="row">
+      <!-- Grid -->
+      <div id="programmeGrid" class="row g-4 col-lg-8">
+        <!-- Cards are dynamically injected here -->
+      </div>
+
+      <!-- Detail panel -->
+      <div id="programmeDetail" class="col-lg-4" style="background-color:#f8f9fb; padding:1.5rem; border-radius: 12px; min-height: 300px;">
+        <p>Select a programme to see details</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="mt-4">
+  <ul id="pagination" class="pagination justify-content-center"></ul>
+</nav>
+
+</main>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="images/LOGO-color-new.svg" alt="COSTAATT logo" class="logo-footer mb-3">
+      </div>
+
+      <div class="col-md-4">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
+          <li><a href="#">Academic Calendar</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h6>Admissions</h6>
+        <ul>
+          <li><a href="admissions.html">How to Apply</a></li>
+          <li><a href="admissions.html">Tuition & Fees</a></li>
+          <li><a href="admissions.html">Financial Aid</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2024 COSTAATT</span>
+      <span>
+        <a href="#">Privacy Policy</a> ·
+        <a href="#">Accessibility</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/programmes.js"></script>
+</body>
+</html>
