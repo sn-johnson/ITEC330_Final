@@ -14,6 +14,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
     rel="stylesheet"
   >
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/96e67bb0d3.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,9 +43,9 @@
 
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Programmes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="programmes.html">Programmes</a></li>
+        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Students</a></li>
         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
       </ul>
@@ -73,28 +75,38 @@
 
 
   <!-- Key Actions -->
-  <section class="section-padding">
+  <section class="section-padding feature-actions">
     <div class="card-container">
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card feature-card h-100">
-            <h5>Explore Programmes</h5>
-            <p>Find the programme that fits your career goals.</p>
-          </div>
+          <a href="programmes.html" class="feature-link">
+            <div class="card feature-card h-100">
+              <h5>Explore Programmes</h5>
+              <p>Find the programme that fits your career goals.</p>
+              <i class="fa-solid fa-magnifying-glass feature-icon"></i>
+            </div>
+          </a>  
+        </div>
+
+        
+        <div class="col-md-4">
+          <a href="#" class="feature-link">
+            <div class="card feature-card highlight h-100">
+              <h5>Apply to COSTAATT</h5>
+              <p>Start your application process today.</p>
+              <i class="fa-solid fa-arrow-pointer feature-icon"></i>
+            </div>
+          </a>
         </div>
 
         <div class="col-md-4">
-          <div class="card feature-card highlight h-100">
-            <h5>Apply to COSTAATT</h5>
-            <p>Start your application process today.</p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card feature-card h-100">
-            <h5>Admissions Requirements</h5>
-            <p>Check entry requirements and important dates.</p>
-          </div>
+          <a href="admissions.html" class="feature-link">
+            <div class="card feature-card h-100">
+              <h5>Admissions Requirements</h5>
+              <p>Check entry requirements and important dates.</p>
+              <i class="fa-solid fa-clipboard-check feature-icon"></i>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -185,18 +197,19 @@
       <div class="col-md-4">
         <h6>Quick Links</h6>
         <ul>
-          <li><a href="#">About Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
           <li><a href="#">Academic Calendar</a></li>
-          <li><a href="#">Library</a></li>
+          
         </ul>
       </div>
 
       <div class="col-md-4">
         <h6>Admissions</h6>
         <ul>
-          <li><a href="#">How to Apply</a></li>
-          <li><a href="#">Tuition & Fees</a></li>
-          <li><a href="#">Financial Aid</a></li>
+          <li><a href="admissions.html">How to Apply</a></li>
+          <li><a href="admissions.html">Tuition & Fees</a></li>
+          <li><a href="admissions.html">Financial Aid</a></li>
         </ul>
       </div>
     </div>

@@ -138,6 +138,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 
@@ -161,6 +162,36 @@ body {
 
 .featured-bg {
   background-color: #eef2ff; /* matches middle feature card */
+}
+
+/* Feature Actions Section Background */
+.feature-actions {
+  background-color: var(--secondary);
+}
+
+/* Remove default link styling for cards */
+.feature-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+/* Icon styling */
+.feature-icon {
+  font-size: 3.5rem;
+  color: var(--secondary);
+  margin-top: 1.25rem;
+}
+
+/* Adjust icon colour for dark background */
+.feature-actions .feature-icon {
+  color: var(--secondary);
+}
+
+/* Improve contrast on dark section */
+.feature-actions .feature-card {
+  background-color: #ffffff;
 }
 
 /* Footer */
