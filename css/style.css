@@ -658,6 +658,12 @@ body {
     font-size: 1.1rem; 
   }
 
+  .feature-cards-container {  
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;  
+  }
+  
   .feature-card {
     width: 100% !important; /* full width */
     height: auto;
