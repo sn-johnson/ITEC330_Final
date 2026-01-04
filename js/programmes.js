@@ -122,16 +122,14 @@ document.addEventListener("DOMContentLoaded", () => {
       card.querySelector(".feature-card").addEventListener("click", () => {
         showProgrammeDetails(prog);
 
-    filteredProgrammes = [...programmes];
-        renderPaginatedResults();
-        btnFilter.addEventListener("click", filterProgrammes);
       });
 
       programmeGrid.appendChild(card)
 
     });
 
-    filterInfo.textContent = `${list.length} programmes found`;
+    filterInfo.textContent = `${filteredProgrammes.length} programmes found`;
+
   }
 // Pagination variables
   function renderPaginatedResults() {

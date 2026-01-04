@@ -326,6 +326,11 @@ body {
   font-weight: 500;
 }
 
+#programmeGrid .feature-card p {
+  color: #ffffff; /* faculty text white */
+}
+
+
 /* Fade-in from bottom animation */
 @keyframes fadeInUp {
   to {
@@ -333,6 +338,25 @@ body {
     transform: translateY(0);
   }
 }
+
+.filter-padding {
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .filter-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
 
 /* Admissions Hero Section To Fix - add bg image*/
 
