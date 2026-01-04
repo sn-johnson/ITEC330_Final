@@ -9,10 +9,13 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
-  
+
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/96e67bb0d3.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" as="image" href="images/admissions_pic.avif">
+
 </head>
 
 <body>
@@ -176,6 +179,8 @@
 
   <!-- Hero Section -->
   <section class="adminhero-section text-center text-tertiary" role="banner" aria-label="Admissions Hero Section">
+    <img src="images/admissions_pic.avif" alt="Admissions" fetchpriority="high" loading="eager" class="hero-bg"/>
+
     <div class="adminhero-overlay">
       <h1>Admissions</h1>
       <h2>Start Your Journey with Us</h2>
