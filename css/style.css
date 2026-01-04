@@ -54,10 +54,32 @@ body {
 /* Sections */
 .section-padding {
   padding: 4rem 1rem;
+  background: url('../images/subtle_pattern.jpg') no-repeat center center;
 }
 
 .light-bg {
   background-color: var(--light-bg);
+}
+
+.light-bg .feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertically centers content */
+  align-items: center;      /* horizontally centers content */
+  text-align: center;
+}
+
+.light-bg .feature-card h6 {
+  font-weight: 700;          /* heavier than default */
+  color: var(--tertiary);    /* tertiary color */
+  text-align: center;        /* just in case */
+  margin-bottom: 0.5rem;     /* space to paragraph */
+}
+
+.light-bg .feature-card p {
+  text-align: center;
+  color: #495057;           /* keeps the neutral text color */
+  margin-bottom: 0;
 }
 
 .logo-header{
@@ -135,7 +157,7 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
   padding: 2.5rem 1.75rem;
-  min-height: 260px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,7 +171,8 @@ body {
 
 .feature-card h5,
 .feature-card h6 {
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--tertiary);
 }
 
 .feature-card p {
@@ -157,8 +180,21 @@ body {
   margin-bottom: 0;
 }
 
+.feature-card p + p {
+  margin-top: 1rem;
+}
+
+
 .feature-card.highlight {
   background-color: #eef2ff;
+}
+
+@media (max-width: 576px) {
+  .feature-card .card-top,
+  .feature-card .card-bottom {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .featured-bg {
