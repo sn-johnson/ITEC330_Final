@@ -21,36 +21,158 @@
 <body>
 
 <!-- Nav -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom" role="navigation" aria-label="Main navigation">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="images/LOGO-color-new.svg" alt="COSTAATT logo" class="logo-header">
-    </a>
+ <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom"
+       role="navigation"
+       aria-label="Primary navigation">
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNav"
-      aria-controls="mainNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container">
 
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="programmes.html">Programmes</a></li>
-        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Students</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-      </ul>
-      <a href="#" class="btn btn-primary ms-lg-3">Apply Now</a>
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/LOGO-color-new.svg"
+             alt="COSTAATT logo"
+             class="logo-header">
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav content -->
+      <div class="collapse navbar-collapse" id="mainNav">
+
+        <!-- CENTER NAV LINKS -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0"
+            role="menubar">
+
+          <!-- Home -->
+          <li class="nav-item" role="none">
+            <a class="nav-link"
+               role="menuitem"
+               href="index.html">Home</a>
+          </li>
+
+          <!-- Future Students -->
+          <li class="nav-item dropdown" role="none">
+            <a class="nav-link dropdown-toggle"
+               href="#"
+               id="futureStudents"
+               role="menuitem"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"
+               aria-haspopup="true">
+              Future Students
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="futureStudents"
+                role="menu">
+              <li><a class="dropdown-item" role="menuitem" href="programmes.html">Programmes</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="admissions.html">Admissions</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="#">Financial Aid</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="#">Student Life</a></li>
+            </ul>
+          </li>
+
+          <!-- Current Students -->
+          <li class="nav-item dropdown" role="none">
+            <a class="nav-link dropdown-toggle"
+               href="#"
+               id="currentStudents"
+               role="menuitem"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"
+               aria-haspopup="true">
+              Current Students
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="currentStudents"
+                role="menu">
+              <li><a class="dropdown-item" role="menuitem" href="#">Student Expectations</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="#">Student Conduct</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="#">Academic Integrity</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="#">Community Life</a></li>
+            </ul>
+          </li>
+
+          <!-- Alumni -->
+          <li class="nav-item dropdown" role="none">
+            <a class="nav-link dropdown-toggle"
+               href="#"
+               id="alumni"
+               role="menuitem"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"
+               aria-haspopup="true">
+              Alumni
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="alumni"
+                role="menu">
+              <li><a class="dropdown-item" role="menuitem" href="#">Alumni HUB</a></li>
+            </ul>
+          </li>
+
+          <!-- Faculty & Staff -->
+          <li class="nav-item dropdown" role="none">
+            <a class="nav-link dropdown-toggle"
+               href="#"
+               id="facultyStaff"
+               role="menuitem"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"
+               aria-haspopup="true">
+              Faculty &amp; Staff
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="facultyStaff"
+                role="menu">
+              <li><a class="dropdown-item" role="menuitem" href="#">Faculty &amp; Staff Profiles</a></li>
+            </ul>
+          </li>
+
+          <!-- Donors-->
+          <li class="nav-item" role="none">
+            <a class="nav-link"
+               role="menuitem"
+               href="#">Donors</a>
+          </li>
+
+        </ul>
+
+        <!-- nav search and buttons -->
+        <form class="d-flex align-items-center me-lg-3"
+              role="search"
+              aria-label="Site search">
+          <label for="siteSearch" class="visually-hidden">Search</label>
+          <input id="siteSearch"
+                 class="form-control"
+                 type="search"
+                 placeholder="Search"
+                 aria-label="Search site">
+        </form>
+
+        <a href="#"
+           class="btn btn-primary me-2">
+          Log In
+        </a>
+
+        <a href="#"
+           class="btn btn-primary">
+          Apply
+        </a>
+
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
 <!-- Main content -->
 <main id="main-content" role="main" tabindex="-1">
@@ -201,35 +323,89 @@
 <footer class="footer" role="contentinfo" aria-label="Site Footer">
   <div class="container">
     <div class="row g-4">
-      <div class="col-md-4">
-        <img src="images/LOGO-color-new.svg" alt="COSTAATT logo" class="logo-footer mb-3">
+
+      <!-- Left Column (Logo + Contact + Socials) -->
+      <div class="col-md-4 footer-left">
+        <a href="index.html" class="d-block mb-3">
+          <img src="images/LOGO-color-new.svg" alt="COSTAATT Logo" class="logo-footer">
+        </a>
+
+        <!-- Email -->
+        <div class="footer-contact mb-2" aria-label="College Email Contact">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:info@costaatt.edu.tt">info@costaatt.edu.tt</a>
+        </div>
+
+        <!-- Phone -->
+        <div class="footer-contact mb-2" aria-label="College Phone Contact">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+18686255030">+1 (868) 625 5030</a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-socials mt-3" aria-label="Social media links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
 
-      <div class="col-md-4">
-        <h6>Quick Links</h6>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="programmes.html">Programmes</a></li>
-          <li><a href="#">Academic Calendar</a></li>
-        </ul>
-      </div>
+      <!-- Right Columns -->
+      <div class="col-md-8 footer-right">
+        <div class="row">
 
-      <div class="col-md-4">
-        <h6>Admissions</h6>
-        <ul>
-          <li><a href="admissions.html">How to Apply</a></li>
-          <li><a href="admissions.html">Tuition & Fees</a></li>
-          <li><a href="admissions.html">Financial Aid</a></li>
-        </ul>
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="footer-heading">Quick Links</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="academic_calendar.html">Academic Calendar</a></li>
+              <li><a href="library.html">Library</a></li>
+              <li><a href="student_portal.html">Student Portal</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+
+          <!-- Admissions -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="footer-heading">Admissions</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="admissions.html#how-to-apply">How to Apply</a></li>
+              <li><a href="admissions.html#tuition-fees">Tuition & Fees</a></li>
+              <li><a href="admissions.html#financial-aid">Financial Aid</a></li>
+              <li><a href="admissions.html#transfer-credits">Transfer Credits</a></li>
+              <li><a href="admissions.html#international-students">International Students</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-md-4">
+            <h6 class="footer-heading">Contact Us</h6>
+            <address>
+              <a class="footer-address" href="https://www.google.com/maps/place/Pierre+Road+Connector,+Chaguanas,+Trinidad" target="_blank" rel="noopener noreferrer">
+                Pierre Road Connector<br>
+                Chaguanas, Trinidad
+              </a>
+            </address>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="footer-bottom mt-3 d-flex justify-content-between">
-      <span>© 2024 COSTAATT</span>
-      <span>
+    <!-- Separator -->
+    <hr class="footer-separator">
+
+    <!-- Bottom Row -->
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="footer-copyright">
+        &copy; 2025 COSTAATT. All rights reserved.
+      </div>
+      <div class="footer-legal-links mt-2 mt-md-0">
         <a href="#">Privacy Policy</a> ·
-        <a href="#">Accessibility</a>
-      </span>
+        <a href="#">Terms of Service</a> ·
+        <a href="#">Accessibility Statement</a>
+      </div>
     </div>
   </div>
 </footer>
