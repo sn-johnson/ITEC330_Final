@@ -3,183 +3,365 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>COSTAATT – Start Your Future | Programmes </title>
+  <title>COSTAATT – Start Your Future | Programmes</title>
   
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
-
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
     rel="stylesheet"
   >
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/96e67bb0d3.js" crossorigin="anonymous"></script>
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <!-- Nav -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
-  <div class="container">
-    
-    <a class="navbar-brand" href="#"><img src="images/LOGO-color-new.svg"alt="COSTAATT logo" class="logo-header"></a>
+ <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom"
+       role="navigation"
+       aria-label="Primary navigation">
 
+    <div class="container">
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNav"
-      aria-controls="mainNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/LOGO-color-new.svg"
+             alt="COSTAATT logo"
+             class="logo-header">
+      </a>
 
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="programmes.html">Programmes</a></li>
-        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Students</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-      </ul>
-      <a href="#" class="btn btn-primary ms-lg-3">Apply Now</a>
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav content -->
+      <div class="collapse navbar-collapse" id="mainNav">
+
+        <!-- CENTER NAV LINKS -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0"
+            role="menubar">
+
+          <!-- Home -->
+          <li class="nav-item" role="none">
+            <a class="nav-link"
+               role="menuitem"
+               href="index.html">Home</a>
+          </li>
+
+          <!-- Future Students -->
+          <li class="nav-item dropdown" role="none">
+            <a class="nav-link dropdown-toggle"
+               href="#"
+               id="futureStudents"
+               role="menuitem"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"
+               aria-haspopup="true">
+              Future Students
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="futureStudents"
+                role="menu">
+              <li><a class="dropdown-item" role="menuitem" href="programmes.html">Programmes</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="admissions.html">Admissions</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="#">Financial Aid</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="#">Student Life</a></li>
+            </ul>
+          </li>
+
+          <!-- Current Students -->
+          <li class="nav-item dropdown" role="none">
+            <a class="nav-link dropdown-toggle"
+               href="#"
+               id="currentStudents"
+               role="menuitem"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"
+               aria-haspopup="true">
+              Current Students
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="currentStudents"
+                role="menu">
+              <li><a class="dropdown-item" role="menuitem" href="#">Student Expectations</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="#">Student Conduct</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="#">Academic Integrity</a></li>
+              <li><a class="dropdown-item" role="menuitem" href="#">Community Life</a></li>
+            </ul>
+          </li>
+
+          <!-- Alumni -->
+          <li class="nav-item dropdown" role="none">
+            <a class="nav-link dropdown-toggle"
+               href="#"
+               id="alumni"
+               role="menuitem"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"
+               aria-haspopup="true">
+              Alumni
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="alumni"
+                role="menu">
+              <li><a class="dropdown-item" role="menuitem" href="#">Alumni HUB</a></li>
+            </ul>
+          </li>
+
+          <!-- Faculty & Staff -->
+          <li class="nav-item dropdown" role="none">
+            <a class="nav-link dropdown-toggle"
+               href="#"
+               id="facultyStaff"
+               role="menuitem"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"
+               aria-haspopup="true">
+              Faculty &amp; Staff
+            </a>
+            <ul class="dropdown-menu"
+                aria-labelledby="facultyStaff"
+                role="menu">
+              <li><a class="dropdown-item" role="menuitem" href="#">Faculty &amp; Staff Profiles</a></li>
+            </ul>
+          </li>
+
+          <!-- Donors-->
+          <li class="nav-item" role="none">
+            <a class="nav-link"
+               role="menuitem"
+               href="#">Donors</a>
+          </li>
+
+        </ul>
+
+        <!-- nav search and buttons -->
+        <form class="d-flex align-items-center me-lg-3"
+              role="search"
+              aria-label="Site search">
+          <label for="siteSearch" class="visually-hidden">Search</label>
+          <input id="siteSearch"
+                 class="form-control"
+                 type="search"
+                 placeholder="Search"
+                 aria-label="Search site">
+        </form>
+
+        <a href="#"
+           class="btn btn-primary me-2">
+          Log In
+        </a>
+
+        <a href="#"
+           class="btn btn-primary">
+          Apply
+        </a>
+
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<!-- Hero -->
-<main id="main-content" tabindex="-1">
-    <!-- Programmes Hero Section -->
-<section class="programmes-hero d-flex align-items-center">
-  <div class="container">
-    <div class="hero-text">
-      <h1 class="hero-title">Explore our Academic Programmes</h1>
-      <h3 class="hero-subtitle">Your Pathway to Success Starts Here</h3>
+
+<!-- Main content -->
+<main id="main-content" role="main" tabindex="-1">
+
+  <!-- Hero Section -->
+  <section class="programmes-hero d-flex align-items-center" role="banner" aria-label="Programmes Hero Section">
+    <div class="container">
+      <div class="hero-text">
+        <h1 class="hero-title">Explore our Academic Programmes</h1>
+        <h3 class="hero-subtitle">Your Pathway to Success Starts Here</h3>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-padding" style="background-color: #e0d9f3;">
-  <div class="container">
-    <div class="row g-3 align-items-center">
+  <!-- Filters Section -->
+  <section class="filter-padding" style="background-color: #e0d9f3;" role="region" aria-labelledby="filter-section-title">
+    <h2 id="filter-section-title" class="visually-hidden">Programme Filters</h2>
+    <div class="container">
+      <div class="row g-3 align-items-center">
 
-      <!-- Programme Type Filter -->
-      <div class="col-md-3">
-        <label for="filterType" class="form-label">Programme Type</label>
-        <select id="filterType" class="form-select">
+        <!-- Programme Type Filter -->
+        <div class="col-md-3">
+          <label for="filterType" class="form-label">Programme Type</label>
+          <select id="filterType" class="form-select" aria-label="Filter by Programme Type">
             <option value="">All Types</option>
             <option value="Certificate">Certificate</option>
             <option value="Associates">Associates</option>
             <option value="Bachelors">Bachelors</option>
             <option value="Diploma">Diploma</option>
             <option value="Postgraduate">Postgraduate Diploma</option>
-        </select>
+          </select>
+        </div>
 
-      </div>
+        <!-- Area of Study Filter -->
+        <div class="col-md-4">
+          <label for="filterFaculty" class="form-label">Area of Study</label>
+          <select id="filterFaculty" class="form-select" aria-label="Filter by Area of Study">
+            <option value="">All Schools</option>
+            <option value="School of Business and Digital Technologies">School of Business and Digital Technologies</option>
+            <option value="Ken Gordon School of Communication, Creative, and Digital Media">Ken Gordon School of Communication, Creative, and Digital Media</option>
+            <option value="School of Liberal Arts, Education and Digital Humanities">School of Liberal Arts, Education and Digital Humanities</option>
+            <option value="School of Nursing, Health, and Medical Technologies">School of Nursing, Health, and Medical Technologies</option>
+            <option value="School of Workforce Enhancement and Development">School of Workforce Enhancement and Development</option>
+            <option value="School of Environment Circular Economy and Sustainability">School of Environment Circular Economy and Sustainability</option>
+          </select>
+        </div>
 
-      <!-- Area of Study Filter -->
-      <div class="col-md-4">
-        <label for="filterFaculty" class="form-label">Area of Study</label>
-        <select id="filterFaculty" class="form-select">
-          <option value="">All Schools</option>
-          <option value="School of Business and Digital Technologies">School of Business and Digital Technologies</option>
-          <option value="Ken Gordon School of Communication, Creative, and Digital Media">Ken Gordon School of Communication, Creative, and Digital Media</option>
-          <option value="School of Liberal Arts, Education and Digital Humanities">School of Liberal Arts, Education and Digital Humanities</option>
-          <option value="School of Nursing, Health, and Medical Technologies">School of Nursing, Health, and Medical Technologies</option>
-          <option value="School of Workforce Enhancement and Development">School of Workforce Enhancement and Development</option>
-          <option value="School of Environment Circular Economy and Sustainability">School of Environment Circular Economy and Sustainability</option>
-        </select>
-      </div>
+        <!-- Sort A-Z -->
+        <div class="col-md-3">
+          <label for="sortAlpha" class="form-label">Sort</label>
+          <select id="sortAlpha" class="form-select" aria-label="Sort Programmes A to Z">
+            <option value="asc">A-Z</option>
+            <option value="desc">Z-A</option>
+          </select>
+        </div>
 
-      <!-- Sort A-Z -->
-      <div class="col-md-3">
-        <label for="sortAlpha" class="form-label">Sort</label>
-        <select id="sortAlpha" class="form-select">
-          <option value="asc">A-Z</option>
-          <option value="desc">Z-A</option>
-        </select>
-      </div>
+        <!-- Filter Button -->
+        <div class="col-md-2 d-flex">
+          <button id="btnFilter" class="btn btn-primary w-100" aria-label="Apply Programme Filters">Filter</button>
+        </div>
 
-      <!-- Filter Button -->
-      <div class="col-md-2 d-flex align-items-end">
-        <button id="btnFilter" class="btn btn-primary w-100">Filter</button>
-      </div>
+        <!-- Dynamic info -->
+        <div class="col-md-2">
+          <p id="filterInfo" class="mb-0" style="margin-top: 2rem; font-weight: 600;" aria-live="polite">Showing all programmes</p>
+        </div>
 
-      <!-- Dynamic info -->
-      <div class="col-md-2">
-        <p id="filterInfo" class="mb-0" style="margin-top: 2rem; font-weight: 600;">Showing all programmes</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-<hr style="border-color: #e0d9f3;">
-
-<section class="section-padding">
-  <div class="container">
-    <div class="row">
-      <!-- Grid -->
-      <div id="programmeGrid" class="row g-4 col-lg-8">
-        <!-- Cards are dynamically injected here -->
-      </div>
-
-      <!-- Detail panel -->
-      <div id="programmeDetail" class="col-lg-4" style="background-color:#f8f9fb; padding:1.5rem; border-radius: 12px; min-height: 300px;">
-        <p>Select a programme to see details</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<nav class="mt-4">
-  <ul id="pagination" class="pagination justify-content-center"></ul>
-</nav>
+  <hr style="border-color: #e0d9f3;">
+
+  <!-- Programmes Grid -->
+  <section class="filter-padding" role="region" aria-labelledby="programmes-grid-title">
+    <h2 id="programmes-grid-title" class="visually-hidden">Programmes Grid</h2>
+    <div class="container">
+      <div class="row">
+        <!-- Grid -->
+        <div id="programmeGrid" class="row g-4 col-lg-8" role="list">
+          <!-- Cards are dynamically injected here -->
+        </div>
+
+        <!-- Detail panel -->
+        <aside id="programmeDetail" class="col-lg-4" role="complementary" aria-label="Programme Details" style="background-color:#f8f9fb; padding:1.5rem; border-radius: 12px; min-height: 300px;">
+          <p>Select a programme to see details</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pagination -->
+  <nav class="mt-4" role="navigation" aria-label="Programmes Pagination">
+    <ul id="pagination" class="pagination justify-content-center"></ul>
+  </nav>
 
 </main>
+
 <!-- Footer -->
-<footer class="footer">
+<footer class="footer" role="contentinfo" aria-label="Site Footer">
   <div class="container">
     <div class="row g-4">
-      <div class="col-md-4">
-        <img src="images/LOGO-color-new.svg" alt="COSTAATT logo" class="logo-footer mb-3">
+
+      <!-- Left Column (Logo + Contact + Socials) -->
+      <div class="col-md-4 footer-left">
+        <a href="index.html" class="d-block mb-3">
+          <img src="images/LOGO-color-new.svg" alt="COSTAATT Logo" class="logo-footer">
+        </a>
+
+        <!-- Email -->
+        <div class="footer-contact mb-2" aria-label="College Email Contact">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:info@costaatt.edu.tt">info@costaatt.edu.tt</a>
+        </div>
+
+        <!-- Phone -->
+        <div class="footer-contact mb-2" aria-label="College Phone Contact">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+18686255030">+1 (868) 625 5030</a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-socials mt-3" aria-label="Social media links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
 
-      <div class="col-md-4">
-        <h6>Quick Links</h6>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="programmes.html">Programmes</a></li>
-          <li><a href="#">Academic Calendar</a></li>
-          
-        </ul>
-      </div>
+      <!-- Right Columns -->
+      <div class="col-md-8 footer-right">
+        <div class="row">
 
-      <div class="col-md-4">
-        <h6>Admissions</h6>
-        <ul>
-          <li><a href="admissions.html">How to Apply</a></li>
-          <li><a href="admissions.html">Tuition & Fees</a></li>
-          <li><a href="admissions.html">Financial Aid</a></li>
-        </ul>
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="footer-heading">Quick Links</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="academic_calendar.html">Academic Calendar</a></li>
+              <li><a href="library.html">Library</a></li>
+              <li><a href="student_portal.html">Student Portal</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+
+          <!-- Admissions -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="footer-heading">Admissions</h6>
+            <ul class="footer-links list-unstyled">
+              <li><a href="admissions.html#how-to-apply">How to Apply</a></li>
+              <li><a href="admissions.html#tuition-fees">Tuition & Fees</a></li>
+              <li><a href="admissions.html#financial-aid">Financial Aid</a></li>
+              <li><a href="admissions.html#transfer-credits">Transfer Credits</a></li>
+              <li><a href="admissions.html#international-students">International Students</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-md-4">
+            <h6 class="footer-heading">Contact Us</h6>
+            <address>
+              <a class="footer-address" href="https://www.google.com/maps/place/Pierre+Road+Connector,+Chaguanas,+Trinidad" target="_blank" rel="noopener noreferrer">
+                Pierre Road Connector<br>
+                Chaguanas, Trinidad
+              </a>
+            </address>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <span>© 2024 COSTAATT</span>
-      <span>
+    <!-- Separator -->
+    <hr class="footer-separator">
+
+    <!-- Bottom Row -->
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="footer-copyright">
+        &copy; 2025 COSTAATT. All rights reserved.
+      </div>
+      <div class="footer-legal-links mt-2 mt-md-0">
         <a href="#">Privacy Policy</a> ·
-        <a href="#">Accessibility</a>
-      </span>
+        <a href="#">Terms of Service</a> ·
+        <a href="#">Accessibility Statement</a>
+      </div>
     </div>
   </div>
 </footer>
+
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
